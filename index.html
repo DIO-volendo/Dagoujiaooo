@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3e8" />
+    <meta name="description" content="张张嘴，让大狗跟着你一起叫。一个好玩的摄像头互动小玩具。" />
+    <title>大狗，跟我叫！</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="大狗，跟我叫！首页">
+          <span class="wordmark-mark" aria-hidden="true">叫</span>
+          <span>大狗<span class="wordmark-comma">，</span>跟我叫！</span>
+        </a>
+        <div class="topbar-note"><span class="live-dot"></span> 一个会看你脸色的狗狗玩具</div>
+        <a class="topbar-link" href="#how-it-works">怎么玩 <span aria-hidden="true">↘</span></a>
+      </header>
+
+      <main id="top">
+        <section class="intro" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow"><span>CAMERA PET / 001</span><span class="eyebrow-line"></span><span>看见你啦</span></p>
+            <h1 id="page-title">你张嘴，<span>它就叫。</span></h1>
+            <p class="intro-description">对着镜头张张嘴，看看这只大狗能不能跟上你的节奏。</p>
+          </div>
+          <div class="intro-stamp" aria-label="纯属好玩，不必认真">
+            <span>JUST FOR</span>
+            <strong>叫</strong>
+            <span>FUN !</span>
+          </div>
+        </section>
+
+        <section class="playground" aria-label="大狗互动区">
+          <div class="dog-stage" id="dog-stage">
+            <div class="stage-topline"><span>大狗观察中</span><span class="stage-index">NO. 01 — GOOD BOY</span></div>
+            <div class="stage-sun" aria-hidden="true"></div>
+            <div class="stage-star stage-star-one" aria-hidden="true">✳</div>
+            <div class="stage-star stage-star-two" aria-hidden="true">✦</div>
+            <div class="speech-bubble" id="speech-bubble" aria-live="polite">嚼！</div>
+            <div class="dog-wrap" id="dog-wrap">
+              <svg class="dog-art" viewBox="0 0 560 510" role="img" aria-labelledby="dog-title dog-description">
+                <title id="dog-title">一只准备叫的大狗</title>
+                <desc id="dog-description">棕色 floppy 耳朵、圆圆眼睛和粉色舌头的大狗插画</desc>
+                <defs>
+                  <filter id="dog-shadow" x="-30%" y="-20%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="16" stdDeviation="13" flood-color="#153c35" flood-opacity=".2" />
+                  </filter>
+                </defs>
+                <g class="dog-tail" transform-origin="445px 379px">
+                  <path d="M424 373 C476 343 485 381 462 402 C450 414 435 405 438 393" fill="none" stroke="#a84e31" stroke-width="27" stroke-linecap="round" />
+                  <path d="M424 373 C476 343 485 381 462 402" fill="none" stroke="#d98650" stroke-width="12" stroke-linecap="round" />
+                </g>
+                <g filter="url(#dog-shadow)">
+                  <ellipse cx="282" cy="376" rx="151" ry="130" fill="#d88953" />
+                  <ellipse cx="282" cy="398" rx="94" ry="109" fill="#f5d5a4" />
+                  <path d="M184 363 C153 392 158 438 189 453 C211 463 231 444 225 425 C219 406 201 398 192 412" fill="#c97347" />
+                  <path d="M371 364 C401 391 399 434 372 452 C349 467 328 445 336 425 C343 407 361 400 371 414" fill="#c97347" />
+                  <ellipse cx="197" cy="206" rx="68" ry="111" transform="rotate(16 197 206)" fill="#a94e32" />
+                  <ellipse cx="363" cy="206" rx="68" ry="111" transform="rotate(-16 363 206)" fill="#a94e32" />
+                  <ellipse cx="201" cy="211" rx="36" ry="72" transform="rotate(16 201 211)" fill="#d68155" />
+                  <ellipse cx="359" cy="211" rx="36" ry="72" transform="rotate(-16 359 211)" fill="#d68155" />
+                  <path d="M177 159 C199 90 363 84 389 164 C407 220 393 300 358 339 C337 362 310 374 282 374 C254 374 225 362 204 339 C169 300 157 216 177 159Z" fill="#d88953" />
+                  <path d="M190 169 C210 119 346 111 375 166 C386 188 387 213 379 231 C365 262 340 250 318 235 C297 220 266 220 244 235 C219 251 195 262 183 232 C176 213 180 187 190 169Z" fill="#efb77a" />
+                  <ellipse cx="236" cy="218" rx="16" ry="20" fill="#332921" />
+                  <ellipse cx="328" cy="218" rx="16" ry="20" fill="#332921" />
+                  <circle cx="241" cy="211" r="5" fill="#fff5dd" />
+                  <circle cx="333" cy="211" r="5" fill="#fff5dd" />
+                  <ellipse cx="282" cy="271" rx="69" ry="53" fill="#f3d8ae" />
+                  <ellipse cx="282" cy="249" rx="28" ry="20" fill="#332921" />
+                  <path d="M282 262 C281 278 268 281 258 277 M282 262 C283 278 296 281 306 277" fill="none" stroke="#704332" stroke-width="5" stroke-linecap="round" />
+                  <g class="dog-mouth">
+                    <path d="M245 271 C249 296 263 309 282 309 C301 309 315 296 319 271 C310 278 298 281 282 281 C266 281 254 278 245 271Z" fill="#452322" />
+                    <path d="M258 290 Q282 299 306 290 L303 300 Q282 309 261 300Z" fill="#fff1d7" />
+                    <ellipse class="dog-tongue" cx="282" cy="304" rx="16" ry="18" fill="#ec7481" />
+                    <path d="M282 298 L282 313" stroke="#bd4d63" stroke-width="2.5" stroke-linecap="round" />
+                  </g>
+                  <path d="M220 168 Q236 159 250 167 M314 167 Q329 159 344 168" fill="none" stroke="#a85d3c" stroke-width="8" stroke-linecap="round" />
+                  <path d="M225 330 Q238 341 249 333 M316 333 Q328 341 340 330" fill="none" stroke="#c67250" stroke-width="5" stroke-linecap="round" />
+                </g>
+              </svg>
+              <div class="dog-ground" aria-hidden="true"></div>
+            </div>
+            <div class="stage-caption"><span class="caption-paw" aria-hidden="true">✳</span><span id="stage-caption-text">大狗大狗嚼嚼嚼</span><span class="caption-paw" aria-hidden="true">✳</span></div>
+          </div>
+
+          <aside class="control-panel" aria-label="摄像头与声音设置">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">YOUR TURN</p>
+                <h2>轮到你啦</h2>
+              </div>
+              <span class="panel-number">01 / 03</span>
+            </div>
+
+            <div class="camera-preview" id="camera-preview">
+              <video id="camera-video" autoplay muted playsinline aria-label="摄像头画面"></video>
+              <div class="camera-placeholder" id="camera-placeholder">
+                <span class="camera-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 40" fill="none"><rect x="2" y="7" width="31" height="27" rx="6" stroke="currentColor" stroke-width="2.5"/><path d="m34 16 11-7v23l-11-7V16Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="20.5" r="6" stroke="currentColor" stroke-width="2.5"/></svg>
+                </span>
+                <span>镜头还没准备好</span>
+              </div>
+              <span class="camera-live" id="camera-live"><i></i> LIVE</span>
+              <span class="face-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            </div>
+
+            <div class="camera-status" aria-live="polite">
+              <span class="status-mark" id="status-mark"></span>
+              <span id="camera-status-text">还没有开启摄像头</span>
+            </div>
+
+            <button class="camera-button" id="camera-button" type="button">
+              <span class="button-icon" aria-hidden="true">◉</span>
+              <span id="camera-button-label">开启摄像头</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+
+            <div class="divider"><span>或者先试试看</span></div>
+
+            <button class="bark-button" id="bark-button" type="button">
+              <span class="bark-button-word">让它叫一声</span>
+              <span class="bark-key" aria-hidden="true">SPACE</span>
+            </button>
+
+            <div class="sound-row">
+              <label for="volume">叫声音量</label>
+              <output id="volume-value" for="volume">70%</output>
+            </div>
+            <input id="volume" class="volume-slider" type="range" min="0" max="100" value="70" aria-label="叫声音量" />
+
+            <p class="privacy-note"><span aria-hidden="true">⌑</span> 画面只在你的浏览器里处理，不会上传。</p>
+          </aside>
+        </section>
+
+        <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+          <div class="how-heading">
+            <p class="eyebrow"><span>THREE LITTLE STEPS</span><span class="eyebrow-line"></span><span>就这么简单</span></p>
+            <h2 id="how-title">叫醒大狗，只要三步。</h2>
+          </div>
+          <div class="steps">
+            <article class="step"><span class="step-number">01</span><span class="step-symbol">◎</span><h3>打开镜头</h3><p>允许浏览器使用摄像头，画面只留在你的设备里。</p></article>
+            <article class="step"><span class="step-number">02</span><span class="step-symbol step-mouth">◡</span><h3>张大嘴巴</h3><p>站在镜头前，张嘴、闭嘴，尽情发挥你的狼性。</p></article>
+            <article class="step"><span class="step-number">03</span><span class="step-symbol step-spark">✳</span><h3>听它回应</h3><p>大狗看见你张嘴，就会跟着张嘴并嚼嚼嚼。</p></article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"><span>MADE FOR A LITTLE LAUGH</span><span>大狗今日心情：<strong id="mood-text">等你来玩</strong></span><span>音量记得开小一点 :)</span></footer>
+    </div>
+  </body>
+</html>
